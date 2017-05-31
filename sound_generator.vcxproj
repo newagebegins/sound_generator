@@ -76,7 +76,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)libs\imgui;$(SolutionDir)libs\glfw\include;$(SolutionDir)libs\gl3w;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)libs\imgui_impl_glfw_gl3;$(SolutionDir)libs\imgui;$(SolutionDir)libs\glfw\include;$(SolutionDir)libs\gl3w;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <TargetMachine>MachineX86</TargetMachine>
@@ -116,7 +116,7 @@
       </IgnoreSpecificDefaultLibraries>
     </Link>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)libs\imgui;$(SolutionDir)libs\glfw\include;$(SolutionDir)libs\gl3w;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)libs\imgui_impl_glfw_gl3;$(SolutionDir)libs\imgui;$(SolutionDir)libs\glfw\include;$(SolutionDir)libs\gl3w;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -131,11 +131,11 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="imgui_impl_glfw_gl3.cpp" />
     <ClCompile Include="libs\gl3w\gl\gl3w.c" />
     <ClCompile Include="libs\imgui\imgui.cpp" />
     <ClCompile Include="libs\imgui\imgui_demo.cpp" />
     <ClCompile Include="libs\imgui\imgui_draw.cpp" />
+    <ClCompile Include="libs\imgui_impl_glfw_gl3\imgui_impl_glfw_gl3.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
